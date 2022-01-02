@@ -1,3 +1,5 @@
+package src;
+
 public class MultiplicationTablesDisplayer {
     public static void main(String[] args) {
         
