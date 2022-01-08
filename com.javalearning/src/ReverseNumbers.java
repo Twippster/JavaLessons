@@ -9,6 +9,8 @@ public class ReverseNumbers {
         System.out.println("Enter multiple numbers:");
         int n = sc.nextInt();
 
+        sc.close();
+
         int re = 0;
 
         for (; n != 0;) {
@@ -21,6 +23,5 @@ public class ReverseNumbers {
 
         System.out.println(re);
 
-        sc.close();
     }
 }
