@@ -6,10 +6,10 @@ public class StringSorter {
         Scanner sc = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
 
-        System.out.println("How many words would you like to enter:");
-        int us = sc.nextInt();
+        System.out.println("How many words would you like to enter?:");
+        int un = sc.nextInt();
 
-        String[] storage = new String[us];
+        String[] storage = new String[un];
         System.out.println("Enter words:");
 
         for (int i = 0; i < storage.length; i++) {
@@ -23,7 +23,7 @@ public class StringSorter {
 
         for (int i = 0; i < storage.length; i++) {
             for (int j = i + 1; j < storage.length; j++) {
-                 
+                
                 if(storage[i].compareTo(storage[j]) > 0) {
                     temp = storage[i];
                     storage[i] = storage[j];
@@ -31,14 +31,15 @@ public class StringSorter {
                 }
 
             }
+
         }
 
         System.out.printf("\n");
-
+        
         for (int i = 0; i < storage.length; i++) {
             System.out.println(storage[i]);
         }
 
     }
-    
 }
+
